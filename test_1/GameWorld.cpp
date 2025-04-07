@@ -182,7 +182,7 @@ void GameWorld::sendWorldData() // 보낼 데이터
 		{
 			PlayerData* player = pair.second;
 
-			if (player->getName() == "UninitPlayer") continue; // 04 07 우식 추가 
+			if (player->getName() == "UninitPlayer") continue; // 04 07 우식 추가
 
 			worldPacket.writeString(player->getName());   // 플레이어 이름
 			worldPacket.write<float>(player->getPosX());  // X 좌표
